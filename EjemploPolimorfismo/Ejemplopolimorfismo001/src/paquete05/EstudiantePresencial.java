@@ -5,7 +5,6 @@
  */
 package paquete05;
 
-import paquete04.*;
 
 public class EstudiantePresencial extends Estudiante{
     /*1.  Declarar
@@ -43,6 +42,21 @@ public class EstudiantePresencial extends Estudiante{
     // 6. Método obtenerCostoCredito() : Real
     public double obtenerCostoCredito(){
         return costoCredito;
+    }
+    @Override
+    public String toString(){
+        String cadena2 = String.format("Nombres: %s\n"
+                + "Apellidos: %s\n"
+                + "Identificación: %s\n"
+                + "Edad: %d\n"
+                + "Matricula: %.2f\n",
+                nombresEstudiante, apellidosEstudiante,
+                identificacionEstudiante, edadEstudiante, matricula);
+        String cadena = String.format("%sNumero de creditos: %d\n"
+                + "Costo del credito: %.2f\n"
+                + "Matricula: %.2f\n",cadena2 ,numeroCreditos, costoCredito,
+                matricula);
+        return cadena;
     }
     
 }
