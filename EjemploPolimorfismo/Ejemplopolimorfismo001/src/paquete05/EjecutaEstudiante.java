@@ -3,7 +3,6 @@ package paquete05;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import paquete04.Estudiante;
 
 public class EjecutaEstudiante {
 

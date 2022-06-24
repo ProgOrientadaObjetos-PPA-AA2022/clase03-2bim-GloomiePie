@@ -15,7 +15,7 @@ public class Estudiante extends Persona{
     
     public Estudiante(String n, String a, int e, double mat){
         super(n, a, e);
-        setMatricula(mat);
+        matricula = mat;
     }
     
     @Override
@@ -41,6 +41,6 @@ public class Estudiante extends Persona{
     @Override
     public String toString(){
     
-        return String.format("%s - %f", super.toString(), getMatricula());
+        return String.format("%s - %.2f", super.toString(), getMatricula());
     }
 }
